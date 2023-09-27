@@ -1,0 +1,33 @@
+.facility-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.facility-section{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 45px;
+}
+
+.facility-img{
+    width: 60px;
+}
+
+.facility-section > div > h5{
+    font-size: 19px;
+    color: #060606;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.facility-section > div > p{
+    font-size: 13.5px;
+    color: #333;
+    font-weight: 500;
+}

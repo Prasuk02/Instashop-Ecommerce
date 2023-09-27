@@ -1,0 +1,76 @@
+.banner-container{
+    width: 100vw;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-bg-img{
+    height: 150%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 13vw;
+    text-transform: capitalize;
+    transform: translate(0%, -50%);
+    z-index: 2;
+}
+
+.banner-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color:rgb(150, 60, 235);
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.banner-heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.banner-btn{
+    border: none;
+    background-color: rgb(214, 22, 134);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2;
+}
+
+.banner-img{
+    position: absolute;
+    top: 0px;
+    right: 13vw;
+    height: 150%;
+}
+
+.banner-typewriter{
+    color: rgb(255, 131, 86);
+}
+
+@media (width <= 840px) {
+    .banner-heading{
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+@media (width <= 428px) {
+    .banner-heading{
+        font-size: 27px;
+        line-height: 37px;
+    }
+}
