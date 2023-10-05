@@ -1,0 +1,110 @@
+.shipping-page-main-container {
+  /* position: fixed;
+  top: 70px; */
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+  background-color: #f0f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.shipping-container {
+  width: 65%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shipping-address-container > h1 {
+  margin-bottom: 40px;
+}
+
+.shipping-address-container {
+  width: 60%;
+}
+
+.cart-summary-container {
+  width: 40%;
+  border-left: 1px solid #ddd;
+}
+
+.shipping-input-field {
+  padding: 12px 10px;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+.shipping-input-field > option {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.shipping-input-field:focus {
+  outline: none;
+}
+
+.shipping-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shipping-input-container > div {
+  width: 100%;
+}
+
+.shipping-input-container > div > p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.shipping-address-container > button {
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  padding: 15px ;
+  background-color: #0b9145;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+@media (width <= 840px) {
+  .shipping-container {
+    width: 85%;
+  }
+
+  .shipping-address-container {
+    width: 100%;
+  }
+
+  .cart-summary-container {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+}
+
+@media (width <= 460px) {
+  .shipping-container {
+    width: 90%;
+  }
+}

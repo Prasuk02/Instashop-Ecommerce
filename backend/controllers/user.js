@@ -1,9 +1,22 @@
 const userModel = require("../models/userModel");
 const ErrorHandler = require("../utils/errorHandler");
 const sendToken = require("../utils/jwtToken");
+const cloudinary = require('cloudinary')
 
 exports.registerUser = async (req, res, next) => {
   try {
+
+    const myCloud = await cloudinary.v2.uploader.upload(req.body.avatar, {
+      folder: 'avatars',
+      width: 150,
+      crop: 'scale'
+    })
+
+    req.body.avatar = {
+      public_id: myCloud.public_id,
+      url: myCloud.secure_url
+    }
+
     const user = await userModel.create(req.body);
     sendToken(user, 201, res);
   } catch (error) {
@@ -94,6 +107,17 @@ exports.updateUserPassword = async (req, res, next) => {
 
 // UPDATE PROFILE INFO --email, name, avatar
 exports.updateDetails = async (req, res, next) => {
+  const myCloud = await cloudinary.v2.uploader.upload(req.body.avatar, {
+    folder: 'avatars',
+    width: 150,
+    crop: 'scale'
+  })
+
+  req.body.avatar = {
+    public_id: myCloud.public_id,
+    url: myCloud.secure_url
+  }
+  
   const user = await userModel.findByIdAndUpdate(
     { _id: req.user._id },
     req.body,

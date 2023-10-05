@@ -24,9 +24,10 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     color:rgb(150, 60, 235);
-    font-weight: 900;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15.5px;
     margin-bottom: 15px;
+    letter-spacing: 0.5px;
 }
 
 .banner-heading{

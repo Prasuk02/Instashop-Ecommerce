@@ -1,0 +1,125 @@
+.update-profile-page-main-container{
+    position: fixed;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: #e8edf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-profile-data-container{
+    width: 28%;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.update-profile-page-user-data{
+    width: 100%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.update-heading{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #213547;
+}
+
+.update-data-stack{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.update-data-stack > p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.update-data-stack > input{
+    padding: 12px 10px;
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0.2px;
+}
+
+.update-profile-avatar{
+    margin: 20px auto 30px;
+}
+
+.upload-img-text{
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 70%;
+    border: none;
+    background-color:#e75741;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin: 0px auto 20px;
+    word-wrap: break-word;
+}
+
+.upload-img-text:hover{
+    cursor: pointer;
+    background-color:#fa573e;
+}
+
+.upload-img{
+    display: none;
+    margin-bottom: 100px;
+}
+
+.update-profile-btn{
+    padding: 12px 30px;
+    width: 100%;
+    border: none;
+    background-color:#2a4358;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.update-profile-btn:hover{
+    background-color:#324f66;
+    cursor: pointer;
+}
+
+@media (width <= 880px ) {
+    .update-profile-data-container{
+        width: 50%;
+    }
+}
+
+@media (width <= 480px ) {
+    .update-profile-data-container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,56 @@
+.login-signup-main-container{
+    width: 100vw;
+    height: calc(100vh - 70px);
+    position: fixed;
+    background-color: #eeeeee;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-tab-container{
+    width: 28%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabs > p{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabs > p:hover{
+    background-color: rgba(255, 166, 0, 0.548);
+}
+
+.isSelectedTab{
+    background-color: rgba(255, 166, 0, 0.918);
+}
+
+@media (width <= 880px) {
+    .login-signup-tab-container{
+        width: 50%;
+    }
+}
+
+@media (width <= 480px) {
+    .login-signup-tab-container{
+        width: 90%;
+    }
+}

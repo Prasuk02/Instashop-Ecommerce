@@ -1,0 +1,177 @@
+.products-page-main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-page-left-container{
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    padding: 25px 20px;
+    position: sticky;
+    top: 70px;
+    left: 0px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.search-box-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.search-box-container:hover{
+    border: 1px solid #aaa;
+}
+
+.search-box{
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444;
+    font-size: 16.5px;
+    width: 100%;
+}
+
+.search-box::placeholder{
+    color: #aaa;
+}
+
+.search-box:focus{
+    outline: none;
+}
+
+.search-box-icon{
+    color: #333;
+    font-size: 25px;
+}
+
+.search-box-icon:hover{
+    color: #111;
+}
+
+.price-range-heading{
+    margin-top: 20px;
+    font-size: 17px;
+    font-family:cursive;
+    color: #333;
+}
+
+.filter-clear-btn{
+    border: 1px solid #ddd;
+    color: #555;
+    background-color: transparent;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.filter-clear-btn:hover{
+    background-color: #f6e2fa;
+    border: 1px solid #f6e2fa;
+    cursor: pointer;
+}
+
+.price-range-slider{
+    width: 90%;
+    margin: 2px auto;
+}
+
+.price-range-p{
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.filter-price-btn{
+    background-color: #9c4daa;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+}
+
+.category-list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.category-list-container > p{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.category-list-container > p:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+.product-page-right-container{
+    width: 80%;
+    padding: 20px 50px;
+}
+
+.filter-rating-container{
+    margin-top: 0px;
+}
+
+.filter-rating-container > div{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px 15px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.filter-rating-container > div:hover{
+    background-color: #eee;
+}
+
+.isFilterSelected{
+    background-color: #943ea3;
+    color: white !important;
+    border: none !important;
+}
+
+.isFilterSelected:hover{
+    background-color: #9c4daa !important;
+}
+
+.product-page-right-container > p{
+    font-size: 14px;
+    color: #222;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1rem;
+    margin-top: 25px;
+}
+

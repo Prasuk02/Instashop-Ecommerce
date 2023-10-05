@@ -1,23 +1,32 @@
 import axios from "axios";
 import {
+  FETCH_PRODUCT_FAIL,
   FETCH_PRODUCT_REQUEST,
   FETCH_PRODUCT_SUCCESS,
-  FETCH_PRODUCT_FAIL,
-} from "../constants/productConstants";
+} from "../reducer/productReducers";
 
-export const getProducts = () => async (dispatch) => {
+export const getProducts = (keyword = "", category, rating, priceRange) => async (dispatch) => {
   try {
-    dispatch({ type: FETCH_PRODUCT_REQUEST });
-    const { data } = await axios.get("/api/v1/products");
 
-    dispatch({ 
-        type: FETCH_PRODUCT_SUCCESS, 
-        payload: data 
-    });
+    dispatch(FETCH_PRODUCT_REQUEST());
+
+    let fetchLink = `/api/v1/products?keyword=${keyword}`
+    if(category){
+      fetchLink = `${fetchLink}&category=${category.toLowerCase()}`
+    }
+    if(rating){
+      fetchLink = `${fetchLink}&rating[gte]=${rating}`
+    }
+    if(priceRange){
+      fetchLink = `${fetchLink}&price[gte]=${priceRange[0]}&price[lte]=${priceRange[1]}`
+    }
+    const { data } = await axios.get(fetchLink);
+
+    dispatch(FETCH_PRODUCT_SUCCESS(data));
+
   } catch (error) {
-    dispatch({ 
-        type: FETCH_PRODUCT_FAIL, 
-        payload: error.response.data.message 
-    });
+
+    dispatch(FETCH_PRODUCT_FAIL(error.message));
+
   }
 };

@@ -1,0 +1,134 @@
+.cartSummary-main-container{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.cartSummary-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cartSummary-heading > h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cartSummary-heading > button{
+    font-size: 14.5px;
+    font-weight: 500;
+    border: none;
+    color: #117ec7;
+    background-color: #117ec70a;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cartSummary-heading > button:hover{
+    background-color: rgba(17, 126, 199, 0.075);
+    cursor: pointer;
+}
+
+.cartSummary-data > p{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.cartSummary-data > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cartSummary-data > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cartSummary-data > div > h6{
+    font-size: 17px;
+    font-weight: 400;
+    color: #444;
+}
+
+.cartSummary-data > div > p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+}
+
+.cartSummary-total{
+    margin-top: 20px;
+    font-weight: 600 !important;
+    color: #292929 !important;
+}
+
+.cartSummary-total > h4{
+    font-size: 21px !important;
+}
+
+.cartSummary-total > p{
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    color: #292929 !important;
+}
+
+.cartSummary-secure-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cartSummary-secure-text > div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.cartSummary-secure-text > img{
+    width: 90%;
+}
+
+.cartSummary-secure-text > ul{
+    align-self: start;
+    list-style-position: inside;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0.3px;
+    width: 90%;
+    margin: 20px auto 0;
+}
+
+.cartSummary-secure-text > button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0b9145;
+    color: white;
+    margin: 20px 0px 10px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}

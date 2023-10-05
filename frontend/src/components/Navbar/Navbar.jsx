@@ -1,32 +1,36 @@
-import React from 'react'
-import './navbar.css'
-import ecomLogo from '../../assets/images/ecomLogo.png'
-import {BsCart4} from "react-icons/bs"
-import {AiOutlineHeart} from "react-icons/ai"
-import {RxPerson} from "react-icons/rx"
-import {TfiSearch} from "react-icons/tfi"
+import React from "react";
+import "./Navbar.css";
+import ecomLogo from "../../assets/images/ecomLogo.png";
+import { LiaBarsSolid } from "react-icons/lia";
+import { changeSidebarStatus } from "../../actions/sidebarAction";
+import { useDispatch, useSelector } from "react-redux";
+import Sidebar from "../Sidebar/Sidebar";
+import SidebarContent from "../Sidebar/SidebarContent";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const { sidebar } = useSelector((state) => state.sidebarStatus);
+
   return (
-    <div className='nav-container'>
-      <img className='nav-logo' src={ecomLogo} alt='logo'/>
-      <div className='nav-container-right'>
-        <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">My Orders</a>
-          <a href="#">Contact Us</a>
+    <>
+      {sidebar && <Sidebar />}
+      <div className="nav-container">
+        <LiaBarsSolid
+          className="sidebar-icon"
+          onClick={() => {
+            dispatch(changeSidebarStatus());
+          }}
+        />
+        
+        <img className="nav-logo" src={ecomLogo} alt="logo" />
+
+        <div className="navbar-right-main-container">
+          <SidebarContent />
         </div>
         
-        <div className="nav-icons">
-          <TfiSearch />
-          <AiOutlineHeart/>
-          <RxPerson/>
-          <BsCart4/>
-        </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;

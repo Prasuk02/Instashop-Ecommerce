@@ -4,7 +4,6 @@
     background-color: #ddd;
     padding: 50px 7vw;
     gap: 4.5rem;
-    margin-top: 50px;
 }
 
 .footer-logo-section{
@@ -56,7 +55,7 @@
     text-align: center;
 }
 
-@media (width <= 840px){
+@media (width <= 890px){
     .footer-brand{
         width: 60px;
         height: 40px;

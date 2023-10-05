@@ -1,0 +1,122 @@
+.order-confirm-main-container {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-color: #f0f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 70px;
+  padding: 20px 0px;
+}
+
+.order-confirm-container {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 70%;
+  max-height: 100%;
+  padding: 15px 15px 15px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.order-details-container {
+  width: 65%;
+  max-height: 100%;
+  overflow:auto;
+}
+
+.order-confirm-cart-summary {
+  width: 35%;
+  border: 1px solid #ddd;
+  position: sticky;
+  top: 80px;
+}
+
+table {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin-top: 15px;
+}
+
+td {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #222;
+}
+
+.table-row-heading > th {
+  font-weight: 500;
+  text-align: left;
+  font-size: 14px;
+  color: #222;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-product-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.table-product-name-container > img {
+  width: fit-content;
+  height: 75px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.table-product-name-container > p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #111;
+}
+
+.order-confirm-shipping-details{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-confirm-shipping-details > h4{
+  font-size: 16.5px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.order-confirm-shipping-details > p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 1px;
+}
+
+.order-details-container > button{
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  padding: 15px ;
+  background-color: #0b9145;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.order-details-container > button:hover{
+  background-color: #0b7a3b;
+  cursor: pointer;
+}

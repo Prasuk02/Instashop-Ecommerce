@@ -1,0 +1,115 @@
+.profile-page-main-container{
+    position: fixed;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: #e8edf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-data-container{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-page-user-data{
+    width: 100%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.profile-page-user-data > .user-name{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #213547;
+    letter-spacing: 0.5px;
+}
+
+.profile-page-user-data > .user-email{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.profile-avatar{
+    margin: 20px auto 30px;
+}
+
+.editBtn{
+    padding: 12px 30px;
+    width: 80%;
+    border: none;
+    background-color:#2a4358;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.myOrder-btn{
+    padding: 12px 30px;
+    width: 80%;
+    border: none;
+    background-color:#2a4358;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.editBtn:hover, .myOrder-btn:hover{
+    background-color:#324f66;
+    cursor: pointer;
+}
+
+.profile-page-user-data > .user-changePass{
+    cursor: pointer;
+    width: fit-content;
+    margin: 25px auto;
+    color: #283d4e;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-joined-date{
+    color: #444;
+    font-size: 14px;
+}
+
+.user-joined-date > span{
+    color: #444;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media (width <= 880px ) {
+    .profile-data-container{
+        width: 50%;
+    }
+}
+
+@media (width <= 480px ) {
+    .profile-data-container{
+        width: 90%;
+    }
+}
