@@ -8,7 +8,7 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   if (!loading && !isAuthenticated) {
     navigate("/login");
   }
-  return <>{!loading && <Component />}</>;
+  return <>{!loading && <Component {...rest}/>}</>;
 };
 
 export default ProtectedRoute;

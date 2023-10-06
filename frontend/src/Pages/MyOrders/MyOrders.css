@@ -1,0 +1,74 @@
+.my-orders-main-container{
+    position: fixed;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #e5e7e7;
+    padding: 50px 0px;
+}
+
+.data-grid-container{
+    width: 85%;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 4px;
+}
+
+.redColor{
+    color: #dc3545;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.greenColor{
+    color: rgb(27, 163, 61);
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell.MuiDataGrid-cell--textLeft.MuiDataGrid-withBorderColor {
+    padding: 12px 12px;
+}
+
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.css-5wly58-MuiDataGrid-root .MuiDataGrid-cellContent {
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.MuiDataGrid-columnHeaders {
+    background-color: #d3e2ff;
+    padding: 20px 0px;
+}
+
+@media (width <= 480px){
+    .data-grid-container{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 4px;
+        height: 100%;
+    }
+    
+    .my-orders-main-container{
+        padding: 0px 0px;
+    }
+}

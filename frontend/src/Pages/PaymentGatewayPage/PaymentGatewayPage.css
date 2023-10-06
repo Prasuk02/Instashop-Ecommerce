@@ -1,0 +1,132 @@
+.payment-gateway-main-container {
+  position: fixed;
+  top: 70px;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-color: #f0f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.payment-page-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 4px;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+.payment-gateway-form-container {
+  width: 60%;
+}
+
+.payment-page-cart-summary {
+  width: 40%;
+  border: 1px solid #ddd;
+}
+
+.payment-form {
+  margin-top: 15px;
+}
+
+.payment-form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.pay-page-input-field > input,
+.payment-form > input,
+.InputElement {
+  padding: 12px 10px;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+.pay-page-input-field > input:focus,
+.payment-form > input:focus {
+  outline: none;
+}
+
+.pay-page-input-field > p,
+.payment-form > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #262626;
+}
+
+.payment-form > button {
+  margin-top: 15px;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  background-color: #0b9145;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.payment-form > ul{
+    margin-top: 20px;
+}
+
+.payment-form > ul > li{
+    list-style-position: inside;
+    padding: 2px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13.5px;
+    list-style-type: circle;
+    color: #444;
+}
+
+.payment-form > ul > li > span{
+    font-weight: 600;
+    color: #333;
+}
+
+@media (width <= 840px) {
+  .payment-page-container {
+    width: 95%;
+  }
+}
+
+@media (width <= 480px) {
+
+  .payment-gateway-main-container {
+    position: static;
+    height: auto;
+    min-height: calc(100vh - 70px);
+  }
+
+  .payment-page-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .payment-gateway-form-container {
+    width: 100%;
+  }
+  
+  .payment-page-cart-summary {
+    width: 100%;
+  }
+  
+}

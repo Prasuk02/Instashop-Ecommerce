@@ -5,9 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0px;
   position: fixed;
   top: 70px;
-  padding: 20px 0px;
 }
 
 .order-confirm-container {
@@ -25,7 +25,19 @@
 .order-details-container {
   width: 65%;
   max-height: 100%;
-  overflow:auto;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-details-container > h1{
+  margin-bottom: 10px;
+}
+
+.table-container{
+  padding: 0px 0px 15px;
+  height: 100%;
+  overflow: auto;
 }
 
 .order-confirm-cart-summary {
@@ -38,7 +50,6 @@
 table {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
-  margin-top: 15px;
 }
 
 td {
@@ -55,6 +66,7 @@ td {
   color: #222;
   padding: 5px 0px;
   border-bottom: 1px solid #ddd;
+  
 }
 
 .table-product-name-container {
@@ -108,7 +120,7 @@ td {
   padding: 15px ;
   background-color: #0b9145;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 4px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
@@ -119,4 +131,58 @@ td {
 .order-details-container > button:hover{
   background-color: #0b7a3b;
   cursor: pointer;
+}
+
+@media (width <= 840px) {
+
+  .order-confirm-main-container {
+    height: auto;
+    min-height: calc(100vh - 70px);
+    position: static;
+  }
+
+  .order-confirm-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .order-details-container {
+    width: 100%;
+    max-height: 50%;
+  }
+  
+  .order-confirm-cart-summary {
+    width: 55%;
+    align-self: end;
+  }
+}
+
+@media (width <= 480px) {
+  .order-confirm-container {
+    width: 95%;
+    overflow: auto;
+    padding: 20px;
+  }
+  
+  .order-details-container {
+    width: 100%;
+  }
+
+  .table-product-name-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  
+  .order-confirm-cart-summary {
+    width: 100%;
+    align-self: end;
+  }
+
+  .table-product-name-container > img {
+    align-self: center;
+    margin-bottom: 10px;
+  }
 }

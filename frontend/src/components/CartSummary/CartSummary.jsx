@@ -3,13 +3,16 @@ import "./CartSummary.css";
 import { useSelector } from "react-redux";
 import SafeCheckout from "../../assets/images/SafeCheckout.png"
 import {RiSecurePaymentLine} from 'react-icons/ri'
+import { useNavigate } from "react-router-dom";
 
 const CartSummary = () => {
     const {cartItems} = useSelector((state) => state.cart)
+    const navigate = useNavigate()
+
     let subtotal = cartItems.reduce((acc, curr) => {
         return acc + (curr.quantity * curr.price)
     }, 0)
-    let shippingCost = 70;
+    let shippingCost = 50;
     let tax = ((subtotal + shippingCost) * (0.1/100))
 
   return (
@@ -54,7 +57,7 @@ const CartSummary = () => {
             <li>Verified Sellers</li>
         </ul>
 
-        <button>Back To Shopping</button>
+        <button onClick={() => {navigate("/products")}}>Back To Shopping</button>
       </div>
     </div>
   );
